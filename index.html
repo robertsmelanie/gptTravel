@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Smart Travel Finder</title>
+</head>
+<body>
+  
+    <h1>Smart Travel Finder</h1>
+  
+
+
+
+    <div class="form-group">
+        <label for="location">City or Region</label>
+        <input type="text" id="location" placeholder="e.g. Lexington, KY">
+    </div>
+    <div class="form-group">
+        <label for="tags">Tags</label>
+        <select id="tags" multiple>
+            <option value="Free">Free</option>
+            <option value="Budget">Budget</option>
+            <option value="Bad-Weather">Bad-Weather</option>
+            <option value="Children-Focus">Children-Focus</option>
+            <option value="All-Ages-Friendly">All-Ages-Friendly</option>
+            <option value="Grownup-Friendly">Grownup-Friendly</option>
+        </select>
+    </div>
+    <button onclick="runSearch()">Ask GPT</button>
+
+    <div class="results">
+        <h2>Response</h2>
+        <div class="response" id="responseBox">Your answer will appear here...</div>
+    </div>
+
+    <script src="script.js"></script>
+ 
+</body>
+
+</html>
